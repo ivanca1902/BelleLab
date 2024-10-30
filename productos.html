@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelleLab - Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo BelleLab">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h1>Nuestros Productos</h1>
+            <div class="product-item">
+                <h2>Cremas Hidratantes</h2>
+                <p>Hidratación profunda para una piel suave y saludable.</p>
+            </div>
+            <h1>Nuestros Productos</h1>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="assets/serum.jpg" alt="Serum Facial">
+                            <h3>Serum Facial</h3>
+                            <p>Rejuvenece tu piel y combate el envejecimiento.</p>
+                            <span>$25.00</span>
+                            <button onclick="addToCart('Serum Facial', 25.00)">Añadir al Carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="assets/protector_solar.jpg" alt="Protector Solar">
+                            <h3>Protector Solar</h3>
+                            <p>Protege tu piel del sol con SPF50.</p>
+                            <span>$18.00</span>
+                            <button onclick="addToCart('Protector Solar', 18.00)">Añadir al Carrito</button>
+                        </div> 
+            <!-- Agrega más productos aquí -->
+        </section>
+    </main>
+</body>
+</html>
