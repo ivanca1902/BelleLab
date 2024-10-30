@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e3f2f0; /* Tono pastel verde */
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 80px; /* Ajusta el tamaño según lo que necesites */
+    height: 80px; /* Ajusta el tamaño para que el logo sea proporcional */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien en la forma circular */
+    margin-right: 0.5rem; /* Espacio a la derecha del logo */
+}
+
+
+nav a {
+    margin: 0 0.5rem;
+    color: #4a7c6e; /* Verde oscuro del logo */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+h1, h2 {
+    color: #4a7c6e;
+}
+
+.intro, .about, .products, .store, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.button {
+    background-color: #4a7c6e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-productos {
+    background-color: #4a7c6e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #3b6456;
+}
+
+/* Grid para organizar las cards */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Estilo unificado de las cards */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #4a7c6e;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #4a7c6e;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.product-card button {
+    background-color: #4a7c6e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #3b6456;
+}
+
+/* Efecto hover */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+    color: #4a7c6e;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: #4a7c6e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3b6456;
+}
