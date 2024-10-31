@@ -116,12 +116,12 @@ ul li {
 .product-card img {
     display: block;
     width: 100%;
-    max-width: 250px; /* Tamaño máximo adecuado */
+    max-width: 250px;
     height: auto;
-    object-fit: contain; /* Muestra la imagen completa sin recortarla */
-    margin: 0 auto 1rem; /* Centra y deja espacio debajo */
+    object-fit: contain;
+    margin: 0 auto 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil para destacar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .product-grid {
@@ -129,4 +129,38 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+}
+
+/* Botones generales */
+button, .button-productos, .button-vaciar-carrito {
+    background-color: #4a7c6e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover efecto para botones */
+button:hover, .button-productos:hover, .button-vaciar-carrito:hover {
+    background-color: #3b6559;
+}
+
+/* Estilo específico para botón Ver Productos */
+.button-productos {
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estilo específico para botón Vaciar Carrito */
+.button-vaciar-carrito {
+    width: 100%;
+    text-align: center;
 }
