@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -19,26 +20,38 @@
     </header>
     <main>
         <section class="contact">
-            <h1>Contacto</h1>
-            <p>Dirección: Avda. España 1234, Edificio Aurora, Local 5, Asunción</p>
-            <p>Teléfono: +595 971 456 123</p>
-            <p>Email: <a href="mailto:contacto@bellelab.com">contacto@bellelab.com</a></p>
-        </section>
-        <section class="contact-form">
-            <h1>Contáctanos</h1>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-        
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>        
+            <div class="contact-info">  <!-- Agrupamos la información de contacto -->
+                <h1>Contacto</h1>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>  <!-- Icono de ubicación (requiere Font Awesome) -->
+                    Dirección: Avda. España 1234, Edificio Aurora, Local 5, Asunción
+                </p>
+                <p>
+                  <i class="fas fa-phone"></i> <!-- Icono de teléfono -->
+                  Teléfono: +595 971 456 123
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i> <!-- Icono de email -->
+                  Email: <a href="mailto:contacto@bellelab.com">contacto@bellelab.com</a>
+                </p>
+            </div>
+
+            <section class="contact-form">
+                <h2>Contáctanos</h2> 
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>   
+        </section>      
     </main>
 </body>
 </html>
