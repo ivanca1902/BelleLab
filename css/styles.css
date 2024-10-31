@@ -1,164 +1,132 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #e3f2f0; /* Tono pastel verde */
-    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #4a7c6e, #88c9b7);
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header img {
-    width: 80px; /* Ajusta el tamaño según lo que necesites */
-    height: 80px; /* Ajusta el tamaño para que el logo sea proporcional */
-    border-radius: 50%; /* Hace que el logo sea redondo */
-    object-fit: cover; /* Ajusta la imagen para que se vea bien en la forma circular */
-    margin-right: 0.5rem; /* Espacio a la derecha del logo */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0.5rem;
 }
 
+nav {
+    width: 100%;
+    text-align: center;
+}
 
 nav a {
-    margin: 0 0.5rem;
-    color: #4a7c6e; /* Verde oscuro del logo */
+    margin: 0.5rem;
+    color: #f8f8f8;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e3f2f0;
 }
 
 h1, h2 {
     color: #4a7c6e;
-}
-
-.intro, .about, .products, .store, .contact {
-    padding: 2rem;
     text-align: center;
+    margin: 1rem 0;
 }
 
-.button {
-    background-color: #4a7c6e;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.button-productos {
-    background-color: #4a7c6e;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: #3b6456;
-}
-
-/* Grid para organizar las cards */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-/* Estilo unificado de las cards */
-.product-card {
+.about, .intro, .products, .store, .contact {
+    padding: 2rem 1rem;
+    text-align: center;
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    padding-bottom: 1.5rem;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
     border-radius: 8px;
-    margin-bottom: 0.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
-.product-card h3 {
-    font-size: 1.2rem;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #e3f2f0;
     color: #4a7c6e;
+    padding: 0.8rem;
     margin: 0.5rem 0;
-}
-
-.product-card p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0.5rem 0;
-}
-
-.product-card span {
-    font-weight: bold;
-    color: #4a7c6e;
-    display: block;
-    margin: 0.5rem 0;
-}
-
-.product-card button {
-    background-color: #4a7c6e;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-card button:hover {
-    background-color: #3b6456;
-}
-
-/* Efecto hover */
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.contact-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-    font-weight: bold;
-    color: #4a7c6e;
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 .contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 90%;
+    padding: 1rem;
     margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button {
     background-color: #4a7c6e;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    color: white;
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .contact-form button:hover {
-    background-color: #3b6456;
+    background-color: #3b6559;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Tamaño máximo adecuado */
+    height: auto;
+    object-fit: contain; /* Muestra la imagen completa sin recortarla */
+    margin: 0 auto 1rem; /* Centra y deja espacio debajo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil para destacar */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
